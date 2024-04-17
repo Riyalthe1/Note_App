@@ -1,5 +1,8 @@
 package tech.widestars.noteapp.feature_note.domain.model
 
+import androidx.compose.ui.graphics.Color.Companion.Green
+import androidx.compose.ui.graphics.Color.Companion.Red
+import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -12,6 +15,6 @@ data class Note(
     @PrimaryKey val id: Int? = null
 ){
     companion object{
-        val noteColors = listOf()
+        val noteColors = listOf(Red, Green, White)
     }
 }
